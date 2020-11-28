@@ -7,7 +7,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       trim: true,
       required: true,
-      maxlength: [32, 'Name is too long'],
+      maxlength: [64, 'Name is too long'],
       unique: [true, 'The name has to be unique'],
       text: true,
     },
