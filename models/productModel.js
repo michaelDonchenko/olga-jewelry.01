@@ -9,7 +9,6 @@ const productSchema = new mongoose.Schema(
       required: true,
       maxlength: [64, 'Name is too long'],
       unique: [true, 'The name has to be unique'],
-      text: true,
     },
     slug: {
       type: String,
@@ -21,7 +20,6 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
       maxlength: [2000, 'description cannot be more than 2000 chars'],
-      text: true,
     },
     price: {
       type: Number,
